@@ -14,48 +14,33 @@ Inisev believe that we're living in amazing times - where it's possible to work 
 
 ## Response Codes
 
-200 - OK
-429 - Too much request, try again after 30 secs
-401 - Unauthorized
-422 - Unprocessed request due to invalid data
+- 200 - OK
+- 429 - Too much request, try again after 30 secs 
+- 401 - Unauthorized
+- 422 - Unprocessed request due to invalid data
 
 ## Headers
 
 - `Accept` set to `application/json`
-- `Authorization` set to `Bearer {TOKEN}` where required
 
 ## Endpoints
 
 URL: `http://localhost/inisev-task/`
 Suffix: `/public/api/`
 
-### Authentication
+#### User Subscription
 
-> Endpoints for basic user authentication and authorization.
-
-#### User Registration
-
-- Endpoint: `{URL}+{Suffix}+'register'`
+- Endpoint: `{URL}+{Suffix}+'subscribe'`
 - Method: `POST`
 - Body:
 
                 {
                     'firstname' => 'required',
-                    'lastname' => 'required',
-                    'email_address' => 'email',
-                    'country_code' => [
-                        'required', 'regex:/^\+/'
-                    ],
-                    'phone_number' => 'digits:11',
-                    'username' => 'required',
-                    'password' => [
-                        'required'
-                    ],
-                    'account_type' => [
+                    'email' => [
                         'required',
-                        Rule::in(['buyer', 'supplier'])
+                        'email'
                     ],
-                    'firebase_token' => 'required'
+                    'website' => 'required'
                 }
 
 #### Check Username Availability
