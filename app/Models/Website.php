@@ -19,4 +19,14 @@ class Website extends Model
     {
         return $this->hasMany(WebsitePost::class);
     }
+
+    /**
+     * Get all of the subscribers for the Website
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function subscribers(): HasMany
+    {
+        return $this->hasMany(Subscriber::class, 'website_id', 'uid');
+    }
 }
