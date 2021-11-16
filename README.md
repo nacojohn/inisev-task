@@ -1,4 +1,7 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://inisev.com/themes/inisev-theme/assets/images/logo-white.svg" width="400"></a></p>
+<p>
+<div style="background-color: black; text-align: center">
+<a href="https://inisev.com" target="_blank"><img src="https://inisev.com/themes/inisev-theme/assets/images/logo-white.svg" width="400"></a>
+</div></p>
 
 ## Table of Contents
 - [About Inisev](#about)
