@@ -5,7 +5,8 @@
 - [Response Code](#response-codes)
 - [Headers](#headers)
 - [Endpoints](#endpoints)
-    1. [Authentication](#authentication)
+    1. [User Subscription](#user-subscription)
+    2. [Create Post](#create-post)
 - [License](#license)
 
 ## About
@@ -43,17 +44,17 @@ Suffix: `/public/api/`
                     'website' => 'required'
                 }
 
-#### Check Username Availability
+#### Create Post
 
-- Endpoint: `{URL}+{Suffix}+'check-username'`
+- Endpoint: `{URL}+{Suffix}+'create-post'`
 - Method: `POST`
-- Header: `Authorization` set to `Bearer {TOKEN}`
 - Body:
 
                 {
-                    'username' => 'required'
+                    'website' => 'required',
+                    'title' => 'required',
+                    'body' => 'required'
                 }
-
 
 ## License
 
