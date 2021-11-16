@@ -1,0 +1,105 @@
+{
+	"info": {
+		"_postman_id": "7322a10a-472c-435f-80aa-dd972dbca4af",
+		"name": "Inisev Task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Subscribe",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "firstname",
+							"value": "Nnanna",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "nacojohn3@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "website",
+							"value": "enim-qui-sed-consequatur-perspiciatis",
+							"type": "text"
+						}
+					]
+				},
+				"url": "{{url}}/subscribe"
+			},
+			"response": []
+		},
+		{
+			"name": "Create Post",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "Post Title herex",
+							"type": "text"
+						},
+						{
+							"key": "body",
+							"value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque fringilla eleifend sapien eget tincidunt. Morbi ac nunc ante. Integer venenatis tempor mi a rhoncus. Mauris vel congue metus, in volutpat ligula. Donec eu lorem consectetur, ornare diam sit amet, volutpat arcu. Quisque id elementum orci. In hendrerit posuere sem, non ultricies purus.\n\nCurabitur egestas, dui in vestibulum cursus, ipsum lectus euismod risus, ac tempor dui augue sit amet turpis. Nullam luctus pulvinar lorem id tempor. Vivamus sed sem fermentum, egestas felis a, fermentum erat. In mi libero, mollis sit amet nisl vitae, aliquam accumsan est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque sagittis malesuada dolor in faucibus. Nam nibh ligula, maximus nec accumsan laoreet, lobortis et risus.",
+							"type": "text"
+						},
+						{
+							"key": "website",
+							"value": "asperiores-ea-autem-occaecati-error",
+							"type": "text"
+						}
+					]
+				},
+				"url": "{{url}}/create-post"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://localhost/remote_jobs/inisev-task/public/api"
+		}
+	]
+}
