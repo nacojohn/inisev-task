@@ -1,7 +1,4 @@
-<p>
-<div style="background-color: black; text-align: center">
-<a href="https://inisev.com" target="_blank"><img src="https://inisev.com/themes/inisev-theme/assets/images/logo-white.svg" width="400"></a>
-</div></p>
+<p><a href="https://inisev.com" target="_blank"><img src="https://inisev.com/themes/inisev-theme/assets/images/about-us/header-logo.png" width="400"></a></p>
 
 ## Table of Contents
 - [About Inisev](#about)
